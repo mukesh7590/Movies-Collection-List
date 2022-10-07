@@ -7,7 +7,43 @@ body {
    -moz-osx-font-smoothing: grayscale;
    background: #f1f1f1;
 }
-.nav {
+
+#btnPre,
+#btnNext {
+   background: #f2711c;
+   height: 45px;
+   width: 80px;
+   color: #fff;
+   border: none;
+   font-size: 15px;
+   border-radius: 10px;
+   position: relative;
+   top: -1px;
+   cursor: pointer;
+}
+
+.pageNo {
+   color: #fff;
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+.pageControl {
+   background: black;
+   height: 70px;
+   padding: 10px;
+   box-sizing: border-box;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* for touch bottom */
+   /* position: absolute;
+   left: 0;
+   bottom: 0;
+   right: 0; */
+}
+
+.navbar {
    background: black;
    height: 70px;
    padding: 10px;
@@ -16,7 +52,8 @@ body {
    justify-content: center;
    align-items: center;
 }
-.search-container input {
+
+.inputText {
    height: 43px;
    width: 600px;
    border-bottom-left-radius: 4px;
@@ -25,10 +62,13 @@ body {
    font-size: 16px;
    padding: 0 10px;
    box-sizing: border-box;
+   /* border: 4px solid red; */
 }
+
 .search-container {
    position: relative;
 }
+
 .search-results {
    position: absolute;
    background: #fff;
@@ -40,11 +80,15 @@ body {
    border-bottom-right-radius: 5px;
    z-index: 100;
 }
+
 .search-result .movie-info {
    display: flex;
-   flex-direction: column;
+   width: 100%;
+   /* flex-direction: column; */
    justify-content: space-between;
+   align-items: center;
 }
+
 .search-result .movie-info button {
    margin: 20px 10px;
    background: #21ba45;
@@ -52,17 +96,27 @@ body {
    font-weight: 600;
    font-size: 14px;
    border: none;
-   padding: 9px 0;
-   border-radius: 4px;
+   padding: 10px 25px;
+   border-radius: 5px;
 }
+
 .search-result {
    display: flex;
+   margin: 5px 0px;
+   /* border: 4px solid red; */
 }
+
+.search-result:hover {
+   background-color: #f2e8e8;
+}
+
 .search-result img {
-   height: 150px;
+   height: 90px;
+   width: 70px;
 }
+
 .search-result > div span {
-   font-size: 20px;
+   font-size: 16px;
    padding: 10px;
    font-weight: 600;
 }
@@ -73,11 +127,13 @@ body {
 .search-result .movie-info button:focus {
    outline: none;
 }
+
 .search-container button:hover,
 .footer button:hover,
 .search-result .movie-info button:hover {
    cursor: pointer;
 }
+
 #search-btn {
    background: #f2711c;
    height: 43px;
@@ -89,6 +145,7 @@ body {
    position: relative;
    top: -1px;
 }
+
 .main {
    width: 70%;
    margin: 0 auto;
@@ -96,10 +153,12 @@ body {
    padding: 0 20px;
    box-sizing: border-box;
 }
+
 .main .tabs {
    display: flex;
    font-size: 20px;
 }
+
 .main .tabs .tab {
    background: #fff;
    padding: 10px;
@@ -107,14 +166,17 @@ body {
    border-radius: 3px;
    border: 1px solid #e1e1e1;
 }
+
 .active-tabs {
    background: #2185d0 !important;
    color: white;
 }
+
 .main .tabs .tab:hover {
    cursor: pointer;
    background: #e1e1e1;
 }
+
 .movie-card {
    background: #fff;
    padding: 0;
@@ -123,31 +185,40 @@ body {
    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #f1f1f1;
    display: flex;
 }
+
 .movie-card:not(:first-child) {
    margin-top: 20px;
 }
+
 .movie-card:last-child {
    margin-bottom: 50px;
 }
+
 .movie-card .left {
    flex: 1;
 }
+
 .movie-card .left img {
    height: 250px;
 }
+
 .movie-card .right {
    position: relative;
    flex: 10;
 }
+
 .movie-card .title {
    padding: 10px 20px;
-   font-size: 25px;
+   font-size: 23px;
    font-weight: 600;
 }
+
 .movie-card .plot {
+   font-size: 16px;
    margin-top: 20px;
    padding: 0 20px;
 }
+
 .footer {
    position: absolute;
    bottom: 0;
@@ -157,27 +228,40 @@ body {
    padding: 10px 20px;
    box-sizing: border-box;
 }
+
+.btnContainer {
+   display: flex;
+   gap: 30px;
+}
+
 .footer .rating {
    font-size: 20px;
    font-weight: 600;
 }
+
 .footer button {
    font-size: 15px;
    padding: 7px 10px;
    text-shadow: none;
    border-radius: 3px;
    border: none;
+   width: 100px;
    font-weight: 600;
 }
-.favourite-btn {
+
+.favourite-btn,
+.add-btn {
    background-color: #2185d0;
    color: #fff;
 }
-.unfavourite-btn {
+
+.unfavourite-btn,
+.unAdd-btn {
    background-color: #db2828;
    color: #fff;
    text-shadow: none;
 }
+
 .no-movies {
    padding: 20px 0;
    font-size: 20px;
