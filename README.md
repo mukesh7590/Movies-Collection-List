@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Movies-Collection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## About The Project
 
-In the project directory, you can run:
+A user can make his own collection list of movies.
 
-### `npm start`
+## Features
+-  Add movie into your Collection Bucket List. you can also add movies into your favorite.
+-  Track each movie. These are the 4 statuses of a movie:
+   -  Add - Mark the movie as Add, to PUSH the movie into ADD-Bucket-List. 
+   -  Unadd - Mark the movie as Unadd, to REMOVE the movie from ADD-Bucket-List. 
+   -  Favorite - Mark the movie as Favourite, to PUSH the movie into Favourite-Bucket-List. 
+   -  Unfavorite - Mark the movie as Unfavourite, to REMOVE the movie from Favourite-Bucket-List.
+-  A view to show all top rated movies list. Here give an add & Favourite buttons where you can add a new movie into Busket-List.
+-  A view to display Bucket-List movies. when user click on the Tabs(add, favourite) button 
+   -  Show all the add movies which you added into your list. when you Tab the Add Button
+   -  Show all the favourite movies which you added into your list. when you Tab the Favourite Button
+   -  A user can toggle between the Add & Unadd (above mentioned) status of a Movie. 
+   -  A user can toggle between the Favourite & Unfavourite (above mentioned) status of a Movie.
+-  User can search a movie and add it into the Bucket-List.
+-  Pagination is also there so user can go to next and previous page easily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+In the Backend side, we are fetching the data from API
+Here is the Technology Stack of this Application. which I have used to Built this Application.
 
-### `npm test`
+-  ReactJS
+-  Redux ToolKit
+-  HTML
+-  CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- GETTING STARTED -->
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the repo
+   ```sh
+   git clone https://github.com/your_username_/Project-Name.git
+   ```
+- Install all the dependencies packages with NPM
+   ```sh
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Screen-Shots 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+These are the Screenshots of this application.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Screen Shot 2022-11-09 at 8 04 55 PM](https://user-images.githubusercontent.com/25861228/200859157-6c45239e-448e-45ce-8302-c05c8095cbe2.png)
+   
+![Screen Shot 2022-11-09 at 8 05 41 PM](https://user-images.githubusercontent.com/25861228/200859169-15d06ff5-4ae8-43e3-a2e5-76c82cc8dd92.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screen Shot 2022-11-09 at 8 06 27 PM](https://user-images.githubusercontent.com/25861228/200859187-bfaf1aba-98a0-4d21-a54d-e683a7a0f067.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Screen Shot 2022-11-09 at 8 06 37 PM](https://user-images.githubusercontent.com/25861228/200859249-eebecdf5-2bad-4f4d-95e2-c42eb6150571.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Screen Shot 2022-11-09 at 8 06 49 PM](https://user-images.githubusercontent.com/25861228/200859271-1045c626-c054-4d0f-bde7-733a1d703511.png)
 
-## Learn More
+![Screen Shot 2022-11-09 at 8 09 36 PM](https://user-images.githubusercontent.com/25861228/200859777-50a9ed96-61df-4ac2-b2f1-13d20181511f.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Directory Structure and flow of The Code
 
-### Code Splitting
+I am showing the directory structure of src folder. because all the code part in the src folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+       src
+        |------ api
+        |       |--- apiCalls.js
+        |       |     
+        |       └--- apiURLs.js             
+        |             
+        |------ components
+        |       |--- App.js
+        |       |     
+        |       └--- MovieCard.js  
+        |       |     
+        |       └--- Navbar.js
+        |            
+        |------ redux
+        |       |--- movieSlice.js
+        |       |     
+        |       └--- searchSlice.js  
+        |       |     
+        |       └--- store.js
+        |         
+        |------ data.js
+        |------ index.css
+        |------ index
+      
+      
 
-### Analyzing the Bundle Size
+<!-- CONTRIBUTING -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Fork the Project
+2. Create your Feature Branch
+3. Commit your Changes
+4. Push to the Branch
+5. Open a Pull Request
