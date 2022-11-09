@@ -3,7 +3,7 @@
 
 ## About The Project
 
-A user can make his own collection list of movies.
+User can make his own collection list of movies. where user can add & remove movies in their own collection list. 
 
 ## Features
 -  Add movie into your Collection Bucket List. you can also add movies into your favorite.
