@@ -64,7 +64,7 @@ These are the Screenshots of this application.
 
 ## Directory Structure and flow of The Code
 
-I am showing the directory structure of src folder. because all the code part in the src folder.
+I am only showing the directory structure of src folder. Because all the code part in the src folder.
 
        src
         |------ api
